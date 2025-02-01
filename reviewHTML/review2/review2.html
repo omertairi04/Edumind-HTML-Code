@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU review</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Edumind Menu 2</h1>
+            <ul>
+                <li><a href="#">Rezervo tavolinen</a></li>
+                <li><a href="#">Lexo per neve</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Shko nfund</a></li>
+                <li><a href="#">Shko nmes</a></li>
+                <li><a href="#">How to make coffee!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <hr>
+    <br>
+    <article>
+        <div class="menu-things">
+            <figure class="menu-image">
+                <img src="menu.jpg" width="500" height="600" alt="meny-ja jon">
+                <figcaption>Meny-ja e Edumindit</figcaption>
+            </figure>
+            <br>
+            <div class="menu-text">
+                <ul>
+                    <li><h3>Main Course</h3></li>
+                    <ul>
+                        <li>Cheeseburger 200den</li>
+                        <li>Spicy chicken  330den</li>
+                    </ul>
+                    <li><h3>Appetizers</h3></li>
+                    <ul>
+                        <li>Pul</li>
+                        <li>Nuggets</li>
+                    </ul>
+                    <li><h3>Beverages</h3></li>
+                    <ol>
+                        <li>Hot drinks</li>
+                        <ul>
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <ul>
+                                <li>Chaj nane</li>
+                                <li>Chaj babe</li>
+                                <li>Chaj kamomil</li>
+                                <li>Chaj rusi</li>
+                            </ul>
+                        </ul>
+                        <li>Cold drinks</li>
+                        <ul>
+                            <li>Ice Tea</li>
+                            <li>Lemonade</li>
+                        </ul>
+                    </ol>
+                </ul>
+            </div>
+
+            <figure>
+                <video src="video.mp4" controls muted autoplay loop width="700">
+                    Egziston ndonj problem
+                </video>
+                <figcaption>Video-ja e meny-s</figcaption>
+            </figure>
+        </div>
+        <br><br>
+        
+        <section id="specialitetet">
+            <table border="1">
+                <tr>
+                    <th>Emri i specijalitetit</th>
+                    <th>E hane</th>
+                    <th>E marte</th>
+                    <th>E merkure</th>
+                    <th>E enjte</th>
+                    <th>E premte</th>
+                </tr>
+                <tr>
+                    <th>Pizza</th>
+                    <td>PO</td>
+                    <td colspan="3"></td>
+                    <td>PO</td>
+                </tr>
+                <tr>
+                    <th>Fli</th>
+                    <td></td>
+                    <td colspan="3">PO</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Sushi</th>
+                </tr>
+            </table>
+        </section>
+        <br><br><br>
+        
+        <hr>
+        <aside>
+            <h2>Rezervo</h2>
+            <form action="" method="POST" id="rezervo">
+                <label for="personat">Sa persona</label>
+                <input type="number" name="personat">
+                <div class="ora">
+                    <ul>
+                        <li>
+                            <label for="muaji">Muaji</label>
+                            <input type="number" name="muaji">
+
+                            <label for="dita">Dita</label>
+                            <input type="number" name="dita">
+
+                            <label for="koha">Koha</label>
+                            <input type="number" name="koha">
+                        </li>
+                    </ul>
+                </div>
+                <div class="type-porosi">
+                    <label for="mengjes">Mengjes</label>
+                    <input type="checkbox" name="mengjes">
+                    <label for="drek">Drek</label>
+                    <input type="checkbox" name="drek">
+                    <label for="dark">Dark</label>
+                    <input type="checkbox" name="dark">
+                    <label for="pije">Vetem pije</label>
+                    <input type="radio" name="pije">
+                    <label for="dyjat">Te dyjat</label>
+                    <input type="radio" name="dyjat">
+                </div>
+                
+                <label for="emri">Emri: </label>
+                <input type="text" name="emri" required>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" required>
+
+                <div class="phone-num">
+                    <label for="number">Numri juaj: </label>
+                    <select name="number" id="select-num">
+                        <option value="+389">+389 - MK</option>
+                        <option value="+383">+383 - KS</option>
+                        <option value="+355">+355 - AL</option>
+                        <option value="+90">+90 - TR</option>
+                    </select>
+                    <input type="text">
+                </div>
+
+                <label for="mendimi-juaj">Mendimi juaj</label>
+                <textarea cols="50" rows="10" name="mendimi-juaj" id="mendimi-juaj">
+
+                </textarea>
+                <input type="submit" value="Rezervo">
+
+            </form>
+        </aside>
+
+        <br><br><br><br>
+
+    </article>
+</body>
+</html>

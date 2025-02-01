@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap');
+.hero {
+    text-align: center;
+    font-family: "Playwrite VN", serif;
+
+}
+
+body {
+    background-color: bisque;
+}
+
+.section {
+    margin-top: 20px;
+}
+.section h2 {
+    font-family: "Playwrite VN", serif;
+    color: blue !important;
+}
+
+.section img {
+    width: 800px;
+    height: 600px;
+    border-radius: 30px;
+}
+
+.card {
+    margin-top: 40px;
+    display: flex;
+    gap: 50px;
+}
+
+.card div{
+    width: 500px; 
+    margin-left: 50px;
+}
+
+#church img {
+    margin-left: 50px;
+}
+
+#images-in-row {
+    display: flex;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+#images-in-row .card img {
+    width: 600px;
+}
+
+footer {
+    text-align: center;
+    font-size: large;
+    font-style:italic;
+}
+
+#kokino {
+    /* background-image: url("images/pizza.png");
+    background-repeat: no-repeat; */
+}
+
+#kokino img {
+    opacity: 0.5;
+}
+
+#kokino img:hover {
+    opacity: 1;
+}
+
+#rezervo a {
+    font-family: "Playwrite VN", serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: blue;
+}

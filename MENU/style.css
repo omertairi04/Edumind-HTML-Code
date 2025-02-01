@@ -1,0 +1,52 @@
+#fillimi {
+    color: bisque;
+}
+
+body {
+    background-color: cadetblue;
+    max-width: max-content;
+    margin: auto;
+}
+
+a {
+    color: burlywood;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.content {
+    width: 600px;
+    height: 500px;
+}
+
+.mengjesi {
+    color:darkslategrey;
+    text-decoration: none;
+    font-style: none;
+}
+
+
+li, .fli-info {
+    color:burlywood;
+    font-size: 22px;
+}
+
+#coffee-making li {
+    color: red;
+    text-decoration: underline;
+}
+
+
+#specijalitetet {
+    border: 3px solid #1E2749;
+}
+
+#specijalitetet th, td {
+    border: 1px solid #273469;
+}
+
+
+
+
+

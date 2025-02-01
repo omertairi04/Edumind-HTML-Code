@@ -1,0 +1,23 @@
+body {
+    background-color: bisque;
+}
+
+.header {
+    text-align: center;
+}
+
+form {
+    padding: 40px;
+    background-color:beige;
+    border-radius: 30px;
+}
+
+.gjinija label {
+    margin-top: 18px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: blanchedalmond;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+</head>
+<style>
+    form {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-top: 15px;
+        width: 100px;
+    }
+</style>
+<body>
+    
+    <table border="1">
+        <tr>
+            <td>Amir</td>
+            <td>Omer</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Ertan</td>
+            <td>Menan</td>
+            <td>Avdi</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <table class="table2" border="1">
+        <thead>
+            <th>Emri</th>
+            <th>Mbiemri</th>
+            <th>Email</th>
+            <th>Active</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Filani</td>
+                <td>Fisteki</td>
+                <td>ff@email.com</td>
+                <td>
+                    <form>
+                        <input type="checkbox">
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br><br>
+    <table border="1" class="specialitetet">
+        <thead>
+            <tr>
+                <th>Specialiteti</th>
+                <th>E han</th>
+                <th>E mart</th>
+                <th>E merkur</th>
+                <th>E ejte</th>
+                <th>E premte</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Pica</th>
+                <td>Po</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="3">Po</td>
+            </tr>
+            <tr>
+                <th>Fli</th>
+                <td></td>
+                <td colspan="3">Po</td>
+                
+            </tr>
+            <tr>
+                <th>Sushi</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Rezervo ne numrin +389 123 123 123</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br>
+
+    <form method="post">
+        <label for="emri">Vendos Emrin</label>
+        <input required type="text" name="emri" placeholder="Enter value">
+    
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter email">
+    
+        <label for="pass">Password</label>
+        <input type="password" name="pass" required id="pass1">
+
+        <label for="pass">Re-enter Password</label>
+        <input type="password" name="pass" required id="pass2">
+
+        <label for="mosha">Mosha: </label>
+        <input type="number" required name="mosha">
+
+        <div>
+            <label for="male">Male</label>
+            <input name="male" type="radio">
+            <label for="female">Female</label>
+            <input name="female" type="radio">
+        </div>
+
+        <label for="puna">Qfar punoni</label>
+        <select name="puna" id="puna">
+            <option value="arkitekt">Arkitekt</option>
+            <option value="developer">Developer</option>
+            <option value="profesor">Profesor</option>
+            <option value="student">Student</option>
+            <option value="boss">Boss</option>
+        </select>
+
+        <div class="city">
+            <label for="">I kahit je?</label>
+            <input type="text" list="cities" name="city" id="city">
+
+            <datalist id="cities">
+                <option value="Kumanova">Kumanova</option>
+                <option value="Shkupi">Shkupi</option>
+                <option value="New York">New York</option>
+            </datalist>  
+        </div>
+
+        <div class="whywork">
+            <label for="arsyeja">Pse po do me punu per neve?</label>
+            <textarea name="arsyeja" id="arsyeja" cols="50" rows="10">
+            </textarea>
+
+        </div>
+
+        <div>
+            <div>
+                <label for="terms">I accept the terms</label>
+                <input type="checkbox" required name="terms">
+            </div>
+            <label for="lll">LABA LABA</label>
+            <input type="checkbox" name="lll">
+        </div>
+
+        <input class="btn" type="submit" value="Enter">
+    </form>
+
+
+</body>
+</html>

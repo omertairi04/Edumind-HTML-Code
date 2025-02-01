@@ -1,0 +1,65 @@
+
+#intro {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: cadetblue;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -5px;
+}
+
+#welcome {
+    display: flex;
+    gap: 20px;
+}
+
+.animalInfo {
+    display: flex;
+    gap: 20px;
+}
+
+.animalInfo img {
+    border-radius: 30px;
+}
+
+footer {
+    text-align: center;
+}
+
+.button-submit {
+    width: 100px;
+    height: 50px;
+    color: blue;
+    background-color:cornflowerblue;
+    border-radius: 10px;
+}
+
+.button-submit:hover {
+    width: 150px;
+    height: 100px;
+    color: green;
+    background-color: greenyellow;
+    border-radius: 50px;
+}
+
+.zoo-time {
+    border: 1px solid salmon;
+}
+
+.zoo-time th, td {
+    border: 1px solid salmon;
+}
+
+.zoo-time th {
+    color:gold;
+    padding: 20px;
+    background-color: sandybrown;
+}
+
+.zoo-time .day {
+    color:red;
+    background-color: bisque;
+}
+
+

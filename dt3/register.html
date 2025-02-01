@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regjistrohu</title>
+</head>
+<body>
+    <h1>Regjistrohu</h1>
+    <form action="/" method="POST">
+        <label for="emri">Vendosni Emrin tuaj te bukur</label>
+        <input type="text" name="emri">
+        <label>
+            Mbiemri
+            <input type="text" required >
+        </label>
+        <label>
+            Email
+            <input type="email" required >
+        </label>
+        <label>
+            Numri telefonit
+            <input type="number">
+        </label>
+        <label>
+            Passwordi
+            <input type="password" required>
+        </label>
+        <br>
+        <label for="volume">Volume Control</label>
+        <input type="range" name="volume" min="0" max="100" step="10" >
+        <br>
+        <label for="cheese">Extra cheese</label>
+        <input type="checkbox" name="topping" value="cheese">
+        <br>
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" name="topping" value="cheese">
+        <br>
+
+        <p>What is sum of 1 + 1?</p>
+        <input type="radio" name="answer" value="2">
+        <label for="two">2</label>
+        <br>
+        <input type="radio" name="answer" value="11">
+        <label for="eleven">11</label>
+        <br>
+        <label for="lunch">Shka ka per drek?</label>
+        <select name="lunch">
+            <option value="pizza">Pizza</option>
+            <option value="curry">Curry</option>
+            <option value="fli">Fli</option>
+        </select>
+        <br>
+        <label for="city">Zgjith qytetin</label>
+        <input type="text" list="qytetet" name="city">
+
+        <datalist id="qytetet">
+            <option value="kumanova">Kumanova</option>
+            <option value="shkupi">Shkupi</option>
+            <option value="new york">New York</option>
+            <option value="struga">Struga</option>
+            <option value="riyadh">Riyadh</option>
+            <option value="tetova">Tetova</option>
+        </datalist>
+        <br>
+        <label for="description">Enter a description</label>
+        <textarea name="description" rows="5" cols="30">
+            Add something
+        </textarea>
+        <br>
+        <input type="submit" value="Regjistrohu">
+    </form>
+</body>
+</html>

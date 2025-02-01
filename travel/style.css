@@ -1,0 +1,135 @@
+#header {
+    background-image: url('images/firstPic.png');
+    height: 960px;
+    width: 1922px;
+    margin-top: -10px;
+    background-repeat: no-repeat;
+    margin-left: -10px;
+}
+
+
+nav {
+    display: flex;
+    gap: 800px;
+}
+
+#logo {
+    margin-left: 200px;
+}
+
+#logo p {
+    color: darkgreen;
+}
+
+#contents {
+    margin-top: 20px;
+    display: flex;
+    gap: 70px;
+}
+
+#contents a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+#main-content {
+    color: darkgreen;
+    text-align: center;
+    margin-top: 400px;
+}
+
+#main-content h1 {
+    font-size: 50px;
+}
+
+#main-content button {
+    padding: 30px;
+    background-color: transparent;
+    border: 1px solid darkkhaki;
+    font-size: 30px;
+    color: yellow;
+}
+
+#main-content button:hover {
+    padding: 30px;
+    background-color: darkkhaki;
+    border: 1px solid darkkhaki;
+    font-size: 30px;
+    color: white;
+}
+
+#sea-section {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    margin-left: 500px;
+}
+
+#sea-section div div {
+    height: 200px;
+    width: 300px;
+    background-repeat: no-repeat;
+}
+
+
+#alb1 {
+    background-image: url('images/sea1.png');
+}
+
+
+#alb2 {
+    background-image: url('images/sea2.png');
+}
+
+
+#alb3 {
+    background-image: url('images/sea3.png');
+}
+
+#alb1:hover {
+    background-image: url('/images/c1.png');
+}
+
+#alb2:hover {
+    background-image: url('images/c2.png');
+}
+
+#alb3:hover {
+    background-image: url('images/c3.png');
+    background-size: cover;
+}
+
+#hello-section {
+    text-align: center;
+    background-color: green;
+    height: 300px;
+    width: 1500px;
+    margin: 0 auto;
+    color: white;
+}
+
+#hello-section h1 {
+    margin-bottom: 80px;
+}
+
+#hello-section p {
+    margin: 0 auto;
+    width: 600px;
+}
+
+#contact {
+    width: 800px;
+    display: flex;
+    gap: 120px;
+    margin: 0 auto;
+}
+
+
+#contact-form form input {
+    display: block;
+    width: 400px;
+    height: 30px;
+}
+
+

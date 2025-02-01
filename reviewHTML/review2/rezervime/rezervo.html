@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervo</title>
+</head>
+<style>
+</style>
+<body>
+    <div class="rezervo">
+        <form action="" method="POST">
+            <label for="emri">Emri</label>
+            <input type="text" name="emri">
+            <label for="mbiemri">Mbiemri</label>
+            <input type="text" name="mbiemri">
+            <label for="E-mail">E-mail:</label>
+            <input type="email" name="E-mail">
+            <label for="number">Numri telefonit</label>
+            <input type="number" name="number">
+            <label for="pass">Password</label>
+            <input type="password" name="pass">
+            <label for="koha">Zgjith kohen</label>
+            <select name="koha">
+                <option value="mengjes">Mengjes</option>
+                <option value="drek">Drek</option>
+                <option value="dark">Dark</option>
+            </select>
+            <br>
+            <label for="qyteti">Zgjith qytetin</label>
+            <input type="text" name="qyteti" list="qytetet">
+            <br>
+            <datalist id="qytetet">
+                <option value="kumanova">Kumanova</option>
+                <option value="shkupi">Shkupi</option>
+                <option value="new york">New York</option>
+                <option value="struga">Struga</option>
+                <option value="riyadh">Riyadh</option>
+                <option value="tetova">Tetova</option>
+            </datalist>
+            <br>
+            <p>Paguaj me:</p>
+            <input type="radio" value="Cash">
+            <label for="">Cash</label>
+            <input type="radio" value="Card">
+            <label for="">Card</label>
+            <br>
+            <p>Do porosis</p>
+            <label for="">Pije te ftohta</label>
+            <input type="checkbox" value="Pije">
+            <label for="">Embelsira</label>
+            <input type="checkbox" value="Pije">
+            <br>
+            <input type="submit" value="Enter">
+        </form>
+    </div>
+</body>
+</html>

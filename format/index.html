@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="volume control">volume control</label>
+        <input type="range" min="0" max="100" step="10">
+        
+        <div class="pizza-toppings">
+            <h5>Put your toppings</h5>
+            <label for="cheese">Extra cheese</label>
+            <input type="checkbox" name="cheese">
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" name="pepperoni">
+        </div>
+
+        <div class="math-question">
+            <h5>Qfar esht shuma e 1+1</h5>
+            <label for="answer">2</label>
+            <input type="radio" name="answer" value="2">
+            <label for="answer">11</label>
+            <input type="radio" name="answer" value="11">
+        </div>
+
+        <div class="per-drek">
+            <h5>Ushqime per drek</h5>
+            <label for="dreka">Per drek ka: </label>
+            <select name="dreka">
+                <option value="pasul">Pasul</option>
+                <option value="pizza">Pizza</option>
+                <option value="fli">Fli</option>
+            </select>
+        </div>
+
+        <div class="vendi">
+            <label for="qyteti">Zgjith Qytetin</label>
+            <input type="text" list="qytetet" name="qyteti">
+
+            <datalist id="qytetet">
+                <option value="kumanova">Kumanova</option>
+                <option value="shkupi">Shkupi</option>
+                <option value="tetova">Tetova</option>
+                <option value="new-york">New York</option>
+            </datalist>
+        </div>
+
+        <div class="pershkrimi">
+            <label for="pershkrim">Vendosni ni pershkrim</label>
+            <textarea name="pershkrim" rows="5" cols="20">
+                Shkruaj diqka
+            </textarea>
+        </div>
+    
+        <input type="submit" value="Rezervo">
+    </form>
+
+</body>
+</html>

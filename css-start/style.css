@@ -1,0 +1,17 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    color: red;
+}
+
+p {
+    color: green;
+    font: 25px;
+}
+
+h1 {
+    color: blue;
+    font-size: 14px;
+}

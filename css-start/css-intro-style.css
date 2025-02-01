@@ -1,0 +1,75 @@
+p {
+    color: green;
+}
+
+ol {
+   color: blue; 
+}
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.btn-vazhdo {
+    background-color: green;
+}
+
+.btn-vazhdo:hover {
+    background-color: darkgreen;
+    width: 100px;
+    height: 50px;
+    color: red;
+    font-size: 20px;
+}
+
+.btn-cancel {
+    background-color: red;
+}
+
+.btn-cancel:hover {
+    background-color: pink;
+    width: 100px;
+    height: 50px;
+    color: deeppink;
+    font-size: 20px;
+}
+
+.ushqime-fav li {
+    color: green;
+}
+
+.ushqime-fav .vaucher h2 {
+    color: brown;
+}
+
+.ushqime-fav .vaucher p {
+    color: blue;
+}
+
+.vaucher h2 {
+    font-size: 30px;
+}
+
+.vaucher h2, p {
+    color:blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

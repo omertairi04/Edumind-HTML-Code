@@ -1,0 +1,25 @@
+.welcome {
+    text-align: center;
+}
+
+.welcome-h1 {
+    color: firebrick;
+}
+
+.description {
+    color: aqua;
+}
+
+
+h2 {
+    color: red
+}
+
+.blue {
+    color: blue;
+}
+
+#submit-1:hover {
+    color: orange;
+    background-color: red;
+}

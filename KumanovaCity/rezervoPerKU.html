@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rezervoStyle.css">
+    <title>Rezervo per ne KU</title>
+</head>
+<body>
+    
+    <h1 class="header">Rezervo per KU me EduTravel</h1>
+
+    <form id="form">
+        <label for="emri">Emri: </label>
+        <input type="text"  name="emri">
+        <label for="mbiemri">Mbiemri: </label>
+        <input type="text"  name="mbiemri">
+
+
+        <div class="gjinija" style="display: flex;">
+            <p>Gjinija juaj:</p>
+            <label for="male">Male</label>
+            <input type="radio" name="male">
+            <label for="female">Female</label>
+            <input type="radio" name="female">
+        </div>
+        <label for="data">Data:</label>
+        <input type="date" name="data">
+
+        <p style="font-size: 25px;">Menyra e transportit</p>
+        <table border="1">
+            <tr>
+                <th>Mjeti</th>
+                <th>Cmimi</th>
+                <th>Prej</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="transport">
+                    <label for="transport">Aeroplan</label>
+                </td>
+                <td>10$</td>
+                <td>Shkup, Prishtin, Tiran</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="transport">
+                    <label for="transport">Vetur</label>
+                </td>
+                <td>5$</td>
+                <td>Shkup,Tetov,Gostivar</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="transport">
+                    <label for="transport">Bus</label>
+                </td>
+                <td>3$</td>
+                <td>Shkup,Tetov,Gostivar,Batinc</td>
+            </tr>
+        </table>
+        <br>
+        <label for="netet">Netet</label>
+        <input type="number" name="netet">
+        <label for="nrPerson">Numri i personave</label>
+        <input type="number" name="nrPerson">
+    
+        <label for="hotelet">Hoteli</label>
+        <select name="hotelet" id="hotelet">
+            <option value="Montana">Montana</option>
+            <option value="Panorama">Panorama</option>
+            <option value="Russia">Hotel Russia</option>
+        </select>
+
+        <button style="display: block;">Registrohu</button>
+
+    </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="indexStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Zoo</title>
+</head>
+<body>
+    <!-- Introduction Section -->
+    <header id="intro">
+        <h1>Welcome to the City Zoo</h1>
+        <p>The City Zoo is home to a wide variety of animals from all over the world. Explore our exhibits, learn about wildlife, and enjoy a day full of adventure and discovery!</p>
+    </header>
+
+    <div id="welcome">
+        <video src="PlanetZoo.mp4" controls>Does not support</video>
+        <div>
+            <h2>Welcome to our Zoo</h2>
+            <p>We are very good and cheap</p>
+        </div>
+    </div>
+    <!-- Animal Categories Section -->
+    <section>
+        <h2>Animal Categories</h2>
+
+        <h3>Mammals</h3>
+        <div class="animalInfo">
+            <img src="lion.png" width="650" height="400" alt="">
+            <ul>
+                <li>Lion</li>
+                <li>Tiger</li>
+                <li>Elephant</li>
+                <li>Monkey</li>
+            </ul>
+        </div>
+        
+        <h3>Birds</h3>
+        <div class="animalInfo">
+            <ul>
+                <li>Peacock</li>
+                <li>Eagle</li>
+                <li>Penguins</li>
+                <li>
+                    Parrots
+                    <ul>
+                        <li>Macaw</li>
+                        <li>Cockatiel</li>
+                    </ul>
+                </li>
+            </ul>
+            <img src="eagle.png" width="650" height="400" alt="">
+
+        </div>
+
+        <h3>Reptiles</h3>
+        <div class="animalInfo">
+            <img src="reptile.png" width="650" height="400" alt="">
+            <ul>
+                <li>Snake</li>
+                <li>Crocodile</li>
+                <li>Lizard</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Zoo Timings and Ticket Prices -->
+    <section>
+        <h2>Zoo Timings and Ticket Prices</h2>
+        <table class="zoo-time">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Opening Time</th>
+                    <th>Closing Time</th>
+                    <th>Ticket Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="day">Monday to Friday</td>
+                    <td>9:00 AM</td>
+                    <td>6:00 PM</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td class="day">Saturday</td>
+                    <td>10:00 AM</td>
+                    <td>8:00 PM</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td class="day">Sunday</td>
+                    <td>10:00 AM</td>
+                    <td>5:00 PM</td>
+                    <td>$18</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Visit Form -->
+    <section>
+        <h2>Plan Your Visit</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="visit-date">Preferred Visit Date:</label>
+            <input type="date" id="visit-date" name="visit-date" required>
+            <br><br>
+
+            <label for="animal">Animal You’re Most Excited to See:</label>
+            <select id="animal" name="animal">
+                <option value="lion">Lion</option>
+                <option value="penguin">Penguin</option>
+                <option value="snake">Snake</option>
+                <option value="elephant">Elephant</option>
+            </select>
+            <br><br>
+
+            <p>Visitor Type:</p>
+            <input type="radio" id="adult" name="visitor-type" value="adult" required>
+            <label for="adult">Adult</label>
+            <br>
+            <input type="radio" id="child" name="visitor-type" value="child">
+            <label for="child">Child</label>
+            <br>
+            <input type="radio" id="senior" name="visitor-type" value="senior">
+            <label for="senior">Senior</label>
+            <br><br>
+
+            <label for="comments">Feedback or Comments:</label>
+            <br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            <br><br>
+
+            <button class="button-submit" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Bonus Section -->
+    <footer>
+        <h2>Fun Facts About Lions</h2>
+        <p>Did you know that lions are known as the kings of the jungle? They live in groups called prides and are among the most social big cats.</p>
+    </footer>
+</body>
+</html>

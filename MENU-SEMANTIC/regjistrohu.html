@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regjistrohu</title>
+</head>
+<body>
+    <h1>Regjistrohu</h1>
+    <form action="" method="POST">
+        <label for="name">Emri: </label>
+        <input required type="text">
+        <label for="mbiemri">Mbiemri: </label>
+        <input type="text">
+        <label required for="email">Email: </label>
+        <input type="email">
+        <label required for="pass1">Password: </label>
+        <input type="password">
+        <label required for="pass2">Re-enter Password: </label>
+        <input type="password">
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="male">
+            <label for="female">Female</label>
+            <input type="radio" name="female">
+        </div>
+        <label for="qyteti">Qyteti</label>
+        <input type="text" list="qytetet" name="qyteti">
+
+        <datalist id="qytetet">
+            <option value="Kumanova">Kumanova</option>
+            <option value="Shkupi">Shkupi</option>
+            <option value="Tetova">Tetova</option>
+            <option value="Ohri">Ohri</option>
+            <option value="New York">New York</option>
+        </datalist>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
