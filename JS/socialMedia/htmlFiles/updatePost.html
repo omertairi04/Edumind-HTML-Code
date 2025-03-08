@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/updatePost.css">
+    <title>Update Post</title>
+</head>
+<body>
+    <h1>Update Post</h1>
+
+    <div id="update-form">
+        <label for="postId">Select Post ID:</label>
+        <input type="text" id="postId" placeholder="Enter Post ID">
+        <button onclick="fetchPost()">Load Post</button>
+
+        <div id="post-details" style="display: none;">
+            <label for="postTitle">Title:</label>
+            <input type="text" id="postTitle" placeholder="Enter new title">
+
+            <label for="postBody">Body:</label>
+            <textarea id="postBody" rows="4" placeholder="Enter new body"></textarea>
+
+            <button onclick="updatePost()">Update Post</button>
+        </div>
+    </div>
+
+    <script src="../scripts/updatePost.js"></script>
+</body>
+</html>

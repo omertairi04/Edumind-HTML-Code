@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgba(255, 215, 185, 0.91) 23%, rgba(211, 24, 91, 0.8) 93%);
+    margin: 0;
+    padding: 0; /* Remove padding to avoid offset */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 140vh; /* Full height of the viewport */
+}
+
+.product-detail {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    text-align: center; /* Center text within the container */
+}
+
+.product-name {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333; /* Darker color for better contrast */
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+.product-info p {
+    margin: 10px 0;
+    color: #555; /* Slightly lighter color for the text */
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.contact-info a {
+    color: #0066cc; /* Link color */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.image-gallery {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between the images */
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 100%; /* Make images responsive */
+    border-radius: 10px; /* Slightly larger border radius for a modern look */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for effects */
+}
+
+.product-info, .contact-info {
+    background: #f9f9f9; /* Light background for the info section */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    margin-top: 20px; /* Space above the section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h2 {
+    color: #333; /* Darker color for headings */
+    font-size: 24px; /* Increase heading size */
+    margin-bottom: 15px; /* Space below headings */
+}
+
+.info-item, .contact-item {
+    display: flex; /* Flexbox for aligning items */
+    justify-content: space-between; /* Space between label and value */
+    margin-bottom: 10px; /* Space between items */
+}
+
+.info-label, .contact-label {
+    font-weight: bold; /* Bold text for labels */
+    color: #555; /* Lighter color for labels */
+}
+
+.info-value, .contact-value {
+    color: #333; /* Darker color for values */
+}
+
+/* Add icons */
+.info-label i, .contact-label i {
+    margin-right: 8px; /* Space between icon and text */
+    color: #ff1493; /* Icon color */
+}
+
+
+.rent-buy-button {
+    background: linear-gradient(45deg, #ff7f50, #ff1493); /* Gradient from orange to pink */
+    color: white; /* White text color for contrast */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 15px 30px; /* Increased padding for a larger button */
+    font-size: 18px; /* Larger font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for effects */
+}
+
+.rent-buy-button:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+
+/* Hover effect for modern look */
+.image-gallery img:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Optional: Add a media query for responsiveness */
+@media (max-width: 600px) {
+    .image-gallery img {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+

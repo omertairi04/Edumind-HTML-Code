@@ -1,44 +1,115 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visibility Collapse Example</title>
+    <title>HSL Color Picker</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
+        body {
+            font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
         }
-        .hide-row {
-            visibility: collapse;
+        .color-box {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .slider {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
     </style>
 </head>
 <body>
+    <h1>HSL Color Picker</h1>
+    <div class="color-box" id="colorBox"></div>
+    <div class="controls">
+        <div class="slider">
+            <label>Hue:</label>
+            <input type="range" id="hue" min="0" max="360" value="0">
+            <span id="hueValue">0</span>
+        </div>
+        <div class="slider">
+            <label>Saturation:</label>
+            <input type="range" id="saturation" min="0" max="100" value="100">
+            <span id="saturationValue">100%</span>
+        </div>
+        <div class="slider">
+            <label>Lightness:</label>
+            <input type="range" id="lightness" min="0" max="100" value="50">
+            <span id="lightnessValue">50%</span>
+        </div>
+    </div>
 
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>30</td>
-        </tr>
-        <tr class="hide-row">
-            <td>Hidden Row</td>
-            <td>40</td>
-        </tr>
-        <tr>
-            <td>Mary</td>
-            <td>25</td>
-        </tr>
-    </table>
+    <script>
+        const colorBox = document.getElementById('colorBox');
+        const hueInput = document.getElementById('hue');
+        const saturationInput = document.getElementById('saturation');
+        const lightnessInput = document.getElementById('lightness');
+        const hueValue = document.getElementById('hueValue');
+        const saturationValue = document.getElementById('saturationValue');
+        const lightnessValue = document.getElementById('lightnessValue');
 
+        function updateColor() {
+            const h = hueInput.value;
+            const s = saturationInput.value;
+            const l = lightnessInput.value;
+            const hslColor = `hsl(${h}, ${s}%, ${l}%)`;
+            colorBox.style.backgroundColor = hslColor;
+            hueValue.textContent = h;
+            saturationValue.textContent = s + '%';
+            lightnessValue.textContent = l + '%';
+        }
+
+        hueInput.addEventListener('input', updateColor);
+        saturationInput.addEventListener('input', updateColor);
+        lightnessInput.addEventListener('input', updateColor);
+
+        updateColor(); // Initialize with default color
+    </script>
 </body>
-</html>
+</html> -->
+
+
+<div class='container'>
+    <div class='item'>
+      <h1>1</h1>
+    </div>
+    <div class='item'>
+      <h1>2</h1>
+    </div>
+    <div class='item'>
+      <h1>3</h1>
+    </div>
+    <div class='item'>
+      <h1>4</h1>
+    </div>
+    <div class="item">
+      <h1>5</h1>
+    </div>
+  </div>
+  
+  <style>
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 1000px;
+  }
+  
+  
+  .item {
+    height: 100px;
+    width: 100px;
+  }
+</style>

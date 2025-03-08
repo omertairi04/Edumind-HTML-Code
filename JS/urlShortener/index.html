@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>URL Shortener</h2>
+        <input type="text" id="urlInput" placeholder="Enter URL to shorten">
+        <button id="shortenBtn">Shorten URL</button>
+        <p id="shortenedUrl"></p>
+    </div>
+
+</body>
+<script>
+    const apiKey = "9a1268f12e6f4bb790f49278592f765e"; // Replace with your API keyconst 
+const apiUrl = "https://api.rebrandly.com/v1/links";
+
+document.getElementById("shortenBtn").addEventListener("click", () => {
+    const longUrl = document.getElementById("urlInput").value.trim();
+    if (!longUrl) {
+        alert("Please enter a valid URL.");
+        return;
+    }
+
+    let slashtag = `test-${Math.floor(Math.random() * 999999)}`;
+
+    const linkDef = {
+        title: "My first link",
+        slashtag: slashtag,
+        destination: longUrl,
+    };
+
+    fetch(apiUrl, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "apikey": apiKey,  // API Key goes here
+        },
+        body: JSON.stringify(linkDef),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log("Shortened URL:", data.shortUrl);
+        document.getElementById("shortenedUrl").innerHTML = 
+            `Shortened URL: <a href="https://${data.shortUrl}" target="_blank">${data.shortUrl}</a>`;
+    })
+    .catch(error => console.error("Error:", error));
+});
+
+
+</script>
+</html>

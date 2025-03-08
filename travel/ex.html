@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex vs Inline-Flex</title>
+    <style>
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            border: 2px solid blue;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .inline-flex-container {
+            display: inline-flex;
+            gap: 10px;
+            border: 2px solid red;
+            padding: 10px;
+        }
+
+        .box {
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Flex (Block-Level)</h2>
+    <div class="flex-container">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+    </div>
+
+    <h2>Inline-Flex (Inline-Level)</h2>
+    <p>This is some text <span class="inline-flex-container">
+        <div class="box">Item A</div>
+        <div class="box">Item B</div>
+        <div class="box">Item C</div>
+    </span> and more text continues.</p>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Demo</title>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-around;   /* Change this */
+            align-items: center;      /* Change this */
+            border: 2px solid black;
+            height: 300px;
+            width: 80%;
+            margin: auto;
+            background-color: lightblue;
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            background-color: tomato;
+            margin: 5px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        #box-1 {
+            flex-basis: 400px;
+            background-color: blue;
+        }
+
+        .contact {
+            display: flex;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Flexbox Justify & Align Demo</h2>
+    <!-- <div class="flex-container">
+        <div id="box-1" class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div> -->
+
+
+    <div class="contact">
+        <div id="box-1" class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#photos {
+    display: grid;
+    grid-template-columns: repeat(2, 33%);
+}
+
+#photos img {
+    width: 500px;
+    height: 500px;
+}
+
+#form {
+    text-align: center;
+    border: 1px solid gray;
+    width: 100%;
+    height: 100%;
+}

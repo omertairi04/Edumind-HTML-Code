@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "title": "First Post UPDATED",
+      "body": "UDPATED BODY",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Second Post",
+      "body": "This is another post."
+    },
+    {
+      "id": "93b7",
+      "title": "Edumind",
+      "body": "Academy"
+    },
+    {
+      "id": "6940",
+      "title": "ddd",
+      "body": "sdsd"
+    }
+  ]
+}

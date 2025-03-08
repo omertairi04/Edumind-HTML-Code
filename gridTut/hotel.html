@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Luxury Hotel</h1>
+            <nav>
+                <a href="#welcome">Home</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="welcome">
+        <h2>Welcome to Luxury Hotel</h2>
+        <p>Experience the finest comfort and elegance in the heart of the city.</p>
+        <img src="first.png" alt="Luxury Hotel View" class="section-image">
+        <button onclick="alert('Booking page coming soon!')">Book Now</button>
+    </section>
+
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <p>Explore our luxurious suites and cozy rooms, all designed for your perfect stay.</p>
+        <img src="second.png" alt="Hotel Room" class="section-image">
+    </section>
+
+    <section id="amenities">
+        <h2>Amenities</h2>
+        <p>Relax in our spa, swim in our rooftop pool, and enjoy gourmet dining options.</p>
+        <img src="third.png" alt="Hotel Pool" class="section-image">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out for inquiries and reservations. We're here to assist you 24/7.</p>
+        <img src="fourth.png" alt="Hotel Reception" class="section-image">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luxury Hotel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #f5f5f5;
+    }
+    header {
+        background: #333;
+        color: white;
+        padding: 1em 0;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2em;
+    }
+    .navbar nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1em;
+    }
+    .navbar nav a:hover {
+        text-decoration: underline;
+    }
+    section {
+        padding: 2em;
+        text-align: center;
+    }
+    section:nth-child(odd) {
+        background: #fff;
+    }
+    section:nth-child(even) {
+        background: #eaeaea;
+    }
+    .section-image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 1em 0;
+    }
+    button {
+        background: #007bff;
+        color: white;
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #0056b3;
+    }
+    footer {
+        text-align: center;
+        padding: 1em 0;
+        background: #333;
+        color: white;
+    }
+</style>
+
+<!-- Let me know if you want me to swap images or refine anything further! -->
